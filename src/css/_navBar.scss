@@ -1,0 +1,75 @@
+@import "./variables";
+
+.NavbarItems {
+    background-color: $color-bg-ppal ;
+    height: 60px;
+    padding: .4rem;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+    h1 {
+        color: #fff;
+        font-weight: 500;
+        transition: color ease .25s;
+
+        &:hover {
+            color: $color-ppal;
+        }
+
+        span {
+            color: $color-ppal;
+            font-weight: 100;
+            transition: color ease .25s;
+
+            &:hover {
+                color: #fff;
+
+            }
+        }
+
+        i {
+            color: aliceblue;
+        }
+    }
+
+    .navbarLinks {
+        text-align: center;
+        list-style: none;
+        display: flex;
+
+        a {
+            color: #fff;
+            text-decoration: none;
+            margin-right: 1rem;
+
+            &::before {
+                content: '<';
+                color: transparent;
+                font-weight: bold;
+                position: relative;
+                top: 1px;
+                transition: all ease .3s;
+            }
+
+            &::after {
+                content: '>';
+                color: transparent;
+                font-weight: bold;
+                position: relative;
+                top: 1px;
+                transition: all ease .3s;
+            }
+        }
+
+        li:hover a::before {
+            color: $color-ppal;
+
+        }
+
+        li:hover a::after {
+            color: $color-ppal;
+
+        }
+    }
+}
