@@ -12,12 +12,14 @@
             position: absolute;
             top: -700px;
             left: -2000px;
+            right: 0;
             margin-left: auto;
             margin-right: auto;
             transition: all .8s ease-in-out;
 
             li {
                 margin-top: 1.5rem;
+                right: 0;
             }
     
             &.active {
