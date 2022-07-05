@@ -20,3 +20,4 @@ export const menuItems = [
         cName: 'navLinks'
     }
 ]
+export default menuItems
