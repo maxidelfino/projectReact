@@ -5,7 +5,7 @@ import CartWidget from './CartWidget'
 
 const Navbar = () => {
 
-    const [clicked, setClicked] = useState(false)
+    const [clicked, setClicked] = useState(false);
 
     const handleClick = () => {
         setClicked(!clicked)
