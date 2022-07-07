@@ -1,6 +1,7 @@
 import React, { useState } from 'react'
 import BurgerBtn from './BurgerBtn'
 import menuItems from './MenuItems'
+import CartWidget from './CartWidget'
 
 const Navbar = () => {
 
@@ -24,7 +25,10 @@ const Navbar = () => {
                         )
                     })}
                 </ul>
-                <BurgerBtn clicked={clicked} handleClick={handleClick} />   
+                <div className='btn'>
+                    <BurgerBtn clicked={clicked} handleClick={handleClick} />
+                    <CartWidget />
+                </div>
             </nav>
         </>
     )

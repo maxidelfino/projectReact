@@ -1,4 +1,4 @@
-export const mainPlans = [
+const mainPlans = [
     {
         title: 'Basic',
         description: 'Obtén credibilidad para tu negocio. De esta manera transmitirás seguridad, estabilidad y confianza en tu cliente',
