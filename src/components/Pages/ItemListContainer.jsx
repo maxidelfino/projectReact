@@ -1,33 +1,26 @@
 import React from 'react'
-import mainPlans from './MainPlans';
+import ItemList from './ItemList';
 
-const Main = () => {
+const ItemListContainer = () => {
     return (
         <main>
-            {mainPlans.map((item, index) => {
-                return (
-                    <section key={index}>
-                        <article>
-                            <h3>{item.title}</h3>
-                            <p>{item.description}</p>
-                        </article>
-                        <article>
-                            <h5>{item.price}</h5>
-                        </article>
-                        <article>
-                            <p>{item.featureA}</p>
-                            <p>{item.featureB}</p>
-                            <p>{item.featureC}</p>
-                            <p>{item.featureD}</p>
-                            <p>{item.featureE}</p>
-                            <p>{item.featureF}</p>
-                            <p>{item.featureG}</p>
-                        </article>
-                    </section>
-                )
-            })}
+           <ItemList
+           title = 'Basic'
+           description = 'Obtén credibilidad para tu negocio. De esta manera transmitirás seguridad, estabilidad y confianza en tu cliente'
+           price = {20}  // precio total 100
+           />
+           <ItemList
+           title = 'Standard'
+           description = 'Obtén credibilidad para tu negocio. De esta manera transmitirás seguridad, estabilidad y confianza en tu cliente'
+           price = {30} // precio total 150
+           />
+           <ItemList
+           title = 'Premium'
+           description = 'Obtén credibilidad para tu negocio. De esta manera transmitirás seguridad, estabilidad y confianza en tu cliente'
+           price = {40} // precio total 200
+           />
         </main>
     )
 }
 
-export default Main
+export default ItemListContainer
