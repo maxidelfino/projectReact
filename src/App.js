@@ -1,13 +1,12 @@
-import './css/App.css';
 import './css/main.css';
 import NavBar from './components/Navbar/Navbar';
-import ItemListContainer from './components/Main/ItemListContainer';
+import ItemListContainer from './components/Pages/ItemListContainer';
 import Header from './components/Header/Header';
 
 
 function App() {
   return (
-    <div className="App">
+    <>
       <header>  
         <nav>
           <NavBar/>
@@ -15,7 +14,7 @@ function App() {
           <ItemListContainer/>
         </nav>
       </header>
-    </div>
+    </>
   );
 }
 
