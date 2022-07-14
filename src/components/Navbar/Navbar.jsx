@@ -25,9 +25,11 @@ const Navbar = () => {
                         )
                     })}
                 </ul>
-                <div className='btn'>
+                <div>
                     <BurgerBtn clicked={clicked} handleClick={handleClick} />
-                    <CartWidget />
+                    <div className="cardWidget">
+                        <CartWidget className="cardWidget"/>
+                    </div>
                 </div>
             </nav>
         </>
