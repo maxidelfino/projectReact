@@ -1,20 +1,22 @@
-import React from 'react';
-import ItemCount from './ItemCount';
+import React, { useState } from 'react';
 
 const ItemList = (props) => {
-    // let stock = 10;
-    // const [contArticle, setArticle] = useState(0);
+    const [counter, setCounter] = useState(props.initial);
 
-    // const handleClick = () => {
-    //     if (contArticle < stock && contArticle >=0) {
-    //         setArticle(contArticle + 1);
-    //     }
-    // }
-    // const notHandleClick = () => {
-    //     if (contArticle <= stock && contArticle >0) {
-    //         setArticle(contArticle - 1);
-    //     }
-    // }
+    const add = () => {
+        if (counter < props.stock) {
+            let aux = counter+1; //solo funciona con +1 y no con ++
+            setCounter(aux);
+        }
+    }
+
+    const subtract = () => {
+        if (counter > props.initial) {
+            let aux = counter-1;
+            setCounter(aux);
+        }
+    }
+
     return (
         <>
             <section>
@@ -23,11 +25,13 @@ const ItemList = (props) => {
                     <p>{props.description}</p>
                 </article>
                 <article>
-                    {/* <h5>{props.price}</h5>
-                    <button onClick={handleClick}>Agregar al carrito</button>
-                    <p>{contArticle} Artículos</p>
-                    <button onClick={notHandleClick}>Quitar del carrito</button> */}
-                    <ItemCount/>
+                    <h5>{props.price}</h5>
+                    <div>
+                        <button onClick={(subtract)}>-</button>
+                        <p>{counter}</p>
+                        <button onClick={(add)}>+</button>
+                    </div>
+                    <button onClick={(props.onAdd)}>Agregar al carrito</button>
                 </article>
             </section>
         </>
