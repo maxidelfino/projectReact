@@ -1,19 +1,20 @@
-import React, { useState } from 'react';
+import React from 'react';
+import ItemCount from './ItemCount';
 
 const ItemList = (props) => {
-    let stock = 10;
-    const [contArticle, setArticle] = useState(0);
+    // let stock = 10;
+    // const [contArticle, setArticle] = useState(0);
 
-    const handleClick = () => {
-        if (contArticle < stock && contArticle >=0) {
-            setArticle(contArticle + 1);
-        }
-    }
-    const notHandleClick = () => {
-        if (contArticle <= stock && contArticle >0) {
-            setArticle(contArticle - 1);
-        }
-    }
+    // const handleClick = () => {
+    //     if (contArticle < stock && contArticle >=0) {
+    //         setArticle(contArticle + 1);
+    //     }
+    // }
+    // const notHandleClick = () => {
+    //     if (contArticle <= stock && contArticle >0) {
+    //         setArticle(contArticle - 1);
+    //     }
+    // }
     return (
         <>
             <section>
@@ -22,10 +23,11 @@ const ItemList = (props) => {
                     <p>{props.description}</p>
                 </article>
                 <article>
-                    <h5>{props.price}</h5>
+                    {/* <h5>{props.price}</h5>
                     <button onClick={handleClick}>Agregar al carrito</button>
                     <p>{contArticle} Artículos</p>
-                    <button onClick={notHandleClick}>Quitar del carrito</button>
+                    <button onClick={notHandleClick}>Quitar del carrito</button> */}
+                    <ItemCount/>
                 </article>
             </section>
         </>
