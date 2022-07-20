@@ -13,11 +13,12 @@ const ItemListContainer = () => {
     const myPromise = new Promise((resolve, reject) => {
         setTimeout(() => {
             resolve(products);
-        }, 300);
+        }, 5000);
     });
 
     myPromise.then((res)=> {
         setProductList(res);
+        console.log('se ejecuto la promesa');
     }) 
 
 
