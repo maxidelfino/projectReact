@@ -1,5 +1,11 @@
 @import "./variables";
-
-    .css-i4bv87-MuiSvgIcon-root {
+.cardWidget {
+    margin-right: 20px;
+    .MuiSvgIcon-root {
         color: red;
     }
+    .MuiBadge-badge {
+        background-color: aqua;
+        color: black;
+    }
+}

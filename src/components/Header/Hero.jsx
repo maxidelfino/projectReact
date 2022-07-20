@@ -2,12 +2,14 @@ import React from 'react'
 
 const Hero = () => {
   return (
-    <header> {/* colocar de bg una imagen */}
+    <header className='hero'> {/* colocar de bg una imagen */}
+      <div>
         <h1>
-            Llegó la hora de <span>Vender online</span> {/* Estar en internet - Crear tu sitio web (Darle animaciones para que vayan cambiando las frases)*/}
+          Llegó la hora de <span>Vender online</span> {/* Estar en internet - Crear tu sitio web (Darle animaciones para que vayan cambiando las frases)*/}
         </h1>
         <h4>Planes desde 20 USD por mes</h4>
-        <button>Contrata Aquí</button> 
+        <button>Contrata Aquí</button>
+      </div>
     </header>
   )
 }

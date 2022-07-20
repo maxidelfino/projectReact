@@ -1,7 +1,7 @@
 @import "./variables";
 
 .NavbarItems {
-    background-color: $color-bg-ppal ;
+    background-color: $color-purple;
     height: 60px;
     padding: .4rem;
     display: flex;
@@ -14,11 +14,11 @@
         transition: color ease .25s;
 
         &:hover {
-            color: $color-ppal;
+            color: $color-pink;
         }
 
         span {
-            color: $color-ppal;
+            color: $color-pink;
             font-weight: 100;
             transition: color ease .25s;
 
@@ -26,10 +26,6 @@
                 color: #fff;
 
             }
-        }
-
-        i {
-            color: aliceblue;
         }
     }
 
@@ -63,12 +59,12 @@
         }
 
         li:hover a::before {
-            color: $color-ppal;
+            color: $color-pink;
 
         }
 
         li:hover a::after {
-            color: $color-ppal;
+            color: $color-pink;
 
         }
     }

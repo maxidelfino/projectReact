@@ -6,7 +6,7 @@
 }
 
 .NavbarItems {
-  background-color: #202022;
+  background-color: #3807b0;
   height: 60px;
   padding: 0.4rem;
   display: flex;
@@ -19,18 +19,15 @@
   transition: color ease 0.25s;
 }
 .NavbarItems h1:hover {
-  color: #f39c12;
+  color: #fe30af;
 }
 .NavbarItems h1 span {
-  color: #f39c12;
+  color: #fe30af;
   font-weight: 100;
   transition: color ease 0.25s;
 }
 .NavbarItems h1 span:hover {
   color: #fff;
-}
-.NavbarItems h1 i {
-  color: aliceblue;
 }
 .NavbarItems .navbarLinks {
   text-align: center;
@@ -59,10 +56,10 @@
   transition: all ease 0.3s;
 }
 .NavbarItems .navbarLinks li:hover a::before {
-  color: #f39c12;
+  color: #fe30af;
 }
 .NavbarItems .navbarLinks li:hover a::after {
-  color: #f39c12;
+  color: #fe30af;
 }
 
 /* nav-icon-6 */
@@ -130,11 +127,45 @@
   top: 13px;
 }
 
-@media (min-width: 768px) {
-  .menu-icon {
-    display: none;
-  }
+.cardWidget {
+  margin-right: 20px;
 }
+.cardWidget .MuiSvgIcon-root {
+  color: red;
+}
+.cardWidget .MuiBadge-badge {
+  background-color: aqua;
+  color: black;
+}
+
+.hero {
+  height: 90vh;
+  width: 100%;
+  background-color: #3807b0;
+  padding: 35vh 0 50vh 125px;
+  color: #fff;
+}
+.hero div {
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  flex-direction: column;
+}
+.hero div h1 {
+  font-size: 2.5rem;
+}
+.hero div h4 {
+  font-size: 1.35rem;
+  margin: 35px;
+}
+.hero div button {
+  cursor: pointer;
+  margin-left: 150px;
+  padding: 10px;
+  border-radius: 7px;
+  border-style: none;
+}
+
 @media (max-width: 768px) {
   .NavbarItems {
     z-index: 10;
@@ -170,5 +201,10 @@
   .NavbarItems .navbarLinks.active a {
     color: #fff;
     font-size: 1.5rem;
+  }
+}
+@media (min-width: 768px) {
+  .menu-icon {
+    display: none;
   }
 }/*# sourceMappingURL=main.css.map */

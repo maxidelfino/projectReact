@@ -10,7 +10,7 @@ const menuItems = [
         cName: 'navLinks'
     },
     {
-        title: 'Planes y precios',
+        title: 'Planes y servicios',
         url: '#',
         cName: 'navLinks'
     },
