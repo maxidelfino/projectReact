@@ -5,7 +5,7 @@ import React from 'react';
 const CartWidget = () => {
   return (
     <Badge badgeContent={23} color="secondary">
-        <ShoppingCartOutlined/>
+        <ShoppingCartOutlined  color="primary"/>
     </Badge>
   )
 }

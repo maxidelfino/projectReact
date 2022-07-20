@@ -1,24 +1,38 @@
-import React from 'react';
+import React, { useState } from 'react';
+import ItemCount from '../components/Pages/ItemCount';
 import ItemList from '../components/Pages/ItemList';
+import products from '../data/products.json';
+
 const ItemListContainer = () => {
+    const onAdd = (param) => {
+        console.log(`La cantidad comprada es ${param}`)
+    }
+
+    const [productList, setProductList] = useState([]);
+
+    const myPromise = new Promise((resolve, reject) => {
+        setTimeout(() => {
+            resolve(products);
+        }, 300);
+    });
+
+    myPromise.then((res)=> {
+        setProductList(res);
+    }) 
+
+
+
     return (
         <>
-            <ItemList
-                title='Basic'
-                description='Obtén credibilidad para tu negocio. De esta manera transmitirás seguridad, estabilidad y confianza en tu cliente'
-                price={20} /> {/* precio total 100 */}
-            <hr />
-            <ItemList
-                title='Standard'
-                description='Obtén credibilidad para tu negocio. De esta manera transmitirás seguridad, estabilidad y confianza en tu cliente'
-                price={30} /> {/* precio total 150 */}
-            <hr />
-            <ItemList
-                title='Premium'
-                description='Obtén credibilidad para tu negocio. De esta manera transmitirás seguridad, estabilidad y confianza en tu cliente'
-                price={40} /> {/* precio total 200 */}
+            <ItemCount  initial = {1} stock = {10} onAdd = {onAdd}/>
+           <ItemList
+           title = 'Basic'
+           description = 'Obtén credibilidad para tu negocio. De esta manera transmitirás seguridad, estabilidad y confianza en tu cliente'
+           price = {20}  // precio total 100
+           />
+           <ItemList item={productList}/>
         </>
     )
 }
 
-export default ItemListContainer;
+export default ItemListContainer

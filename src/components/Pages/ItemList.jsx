@@ -1,21 +1,31 @@
-import React, {useState} from 'react'
+import React from 'react';
+import product from '../../data/products.json';
 
 const ItemList = (props) => {
-    const [contArticle, setArticle] = useState(0);
-    const handleClick = () => {
-        setArticle(contArticle + 1);
-    } 
     return (
-        <section>
-            <article>
-                <h3>{props.title}</h3>
-                <p>{props.description}</p>
-            </article>
-            <article>
-                <h5>{props.price}</h5>
-                <button onClick={handleClick}>Agregar al carrito</button> {contArticle} Artículos
-            </article>
-        </section>
+        // {
+        //     props.map = (article) => {
+        //         <Item product={article}/>
+        //     }
+        // }
+
+        <>
+            {product.map((item, id) => {
+                return (
+                    <section key={id}>
+                        <article>
+                            <div>
+                                <h1>{item.title}</h1>
+                                <p>{item.description}</p>
+                            </div>
+                            <div>
+                                <p>{item.priceMes}</p>
+                            </div>
+                        </article>
+                    </section>
+                )
+            })}
+        </>
     )
 }
 

@@ -1,0 +1,38 @@
+[
+    {
+        "id": "1",
+        "priceMes": 20,
+        "priceInitial": 100,
+        "title": "Basic",
+        "description": "Obtén credibilidad para tu negocio. De esta manera transmitirás seguridad, estabilidad y confianza en tu cliente."
+    },
+    {
+        "id": "2",
+        "priceMes": 30,
+        "priceInitial": 150,
+        "title": "Standard",
+        "description": "Obtén credibilidad para tu negocio. De esta manera transmitirás seguridad, estabilidad y confianza en tu cliente."
+    },
+    {
+        "id": "3",
+        "priceMes": 40,
+        "priceInitial": 200,
+        "title": "Premium",
+        "description": "Obtén credibilidad para tu negocio. De esta manera transmitirás seguridad, estabilidad y confianza en tu cliente."
+    },
+    {
+        "id": "4",
+        "priceMes": 46,
+        "priceInitial": 230,
+        "title": "Standard, by Marketing",
+        "description": "Obtén credibilidad para tu negocio. De esta manera transmitirás seguridad, estabilidad y confianza en tu cliente."
+    },
+    {
+        "id": "5",
+        "priceMes": 54,
+        "priceInitial": 270,
+        "title": "professional",
+        "description": "Obtén credibilidad para tu negocio. De esta manera transmitirás seguridad, estabilidad y confianza en tu client.'"
+    }
+]
+
