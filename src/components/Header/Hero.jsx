@@ -1,6 +1,6 @@
 import React from 'react'
 
-const Header = () => {
+const Hero = () => {
   return (
     <header> {/* colocar de bg una imagen */}
         <h1>
@@ -12,4 +12,4 @@ const Header = () => {
   )
 }
 
-export default Header
+export default Hero

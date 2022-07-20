@@ -1,7 +1,7 @@
 import './css/main.css';
 import NavBar from './components/Navbar/Navbar';
 import ItemListContainer from './components/Pages/ItemListContainer';
-import Header from './components/Header/Header';
+import Hero from './components/Header/Hero';
 
 
 function App() {
@@ -10,7 +10,7 @@ function App() {
       <header>  
         <nav>
           <NavBar/>
-          <Header/>
+          <Hero/>
           <ItemListContainer/>
         </nav>
       </header>
