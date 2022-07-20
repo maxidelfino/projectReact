@@ -26,11 +26,6 @@ const ItemListContainer = () => {
     return (
         <>
             <ItemCount  initial = {1} stock = {10} onAdd = {onAdd}/>
-           <ItemList
-           title = 'Basic'
-           description = 'Obtén credibilidad para tu negocio. De esta manera transmitirás seguridad, estabilidad y confianza en tu cliente'
-           price = {20}  // precio total 100
-           />
            <ItemList item={productList}/>
         </>
     )

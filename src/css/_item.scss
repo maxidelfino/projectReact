@@ -1,0 +1,12 @@
+@import "./variables";
+
+.itemContainer {
+    display: grid;
+
+    .one {
+        height: 500px;
+        width: 200px;
+        background-color: beige;
+        grid-column: 1/3;
+    }
+}

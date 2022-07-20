@@ -1,6 +1,7 @@
 [
     {
         "id": "1",
+        "cName": "one",
         "priceMes": 20,
         "priceInitial": 100,
         "title": "Basic",
@@ -8,6 +9,7 @@
     },
     {
         "id": "2",
+        "cName": "two",
         "priceMes": 30,
         "priceInitial": 150,
         "title": "Standard",
@@ -15,6 +17,7 @@
     },
     {
         "id": "3",
+        "cName": "three",
         "priceMes": 40,
         "priceInitial": 200,
         "title": "Premium",
@@ -22,13 +25,15 @@
     },
     {
         "id": "4",
+        "cName": "four",
         "priceMes": 46,
         "priceInitial": 230,
         "title": "Standard, by Marketing",
         "description": "Obtén credibilidad para tu negocio. De esta manera transmitirás seguridad, estabilidad y confianza en tu cliente."
     },
-    {
+    { 
         "id": "5",
+        "cName": "five",
         "priceMes": 54,
         "priceInitial": 270,
         "title": "professional",
