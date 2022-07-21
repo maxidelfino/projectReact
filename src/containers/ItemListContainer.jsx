@@ -10,23 +10,30 @@ const ItemListContainer = () => {
 
     const [productList, setProductList] = useState([]);
 
-    const myPromise = new Promise((resolve, reject) => {
-        setTimeout(() => {
-            resolve(products);
-        }, 5000);
-    });
-
-    myPromise.then((res)=> {
-        setProductList(res);
-        console.log('se ejecuto la promesa');
-    }) 
-
-
+    const myPromise = (timeOut, products) => {
+        return new Promise((resolve, reject) => {
+            setTimeout(() => {
+                resolve(products);
+            }, timeOut);
+            console.log('se ejecuto la promesa');
+        });
+    }
+    myPromise()
+        .then(() => myPromise(5000, products))
+        .then(() => setProductList(products))
 
     return (
         <>
-            <ItemCount  initial = {1} stock = {10} onAdd = {onAdd}/>
-           <ItemList item={productList}/>
+            <ItemCount initial={1} stock={10} onAdd={onAdd} />
+            <ul>
+                {
+                    productList.length > 0 ?
+                        productList.map(item => (
+                           <ItemList key={item.id} name={item.title}/>
+                        )) :
+                        <p>Cargando...</p>
+                }
+            </ul>
         </>
     )
 }
