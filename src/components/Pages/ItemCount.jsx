@@ -25,7 +25,7 @@ const ItemCount = (props) => {
                 <p>{counter}</p>
                 <button className='btnCount' onClick={add}>+</button>
             </div>
-            <button className='btnCount' onClick={props.onAdd}>Agregar al carrito</button>
+            <button className='btnCount' onClick={props.onAdd(counter)}>Agregar al carrito</button> {/* Recordemos que la function onAdd recibe un parámetro!!! */}
         </>
     )
 }
