@@ -2,7 +2,7 @@
 
 .itemContainer {
     display: grid;
-    grid-template-columns: repeat(3,300px);
+    grid-template-columns: repeat(3,1fr);
     justify-content: space-around;
     align-items: center;
     grid-gap: 50px;

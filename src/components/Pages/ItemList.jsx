@@ -4,7 +4,7 @@ import Item from '../Pages/Item'
 const ItemList = ({ products }) => {
     return (
         <>
-            <ul>
+            <ul className='itemContainer'>
                 {
                     products.length > 0 ?
                         products.map(item => (
