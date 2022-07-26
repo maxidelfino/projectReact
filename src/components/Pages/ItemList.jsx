@@ -1,11 +1,23 @@
 import React from 'react';
+import Item from '../Pages/Item'
 
-const ItemList = (props) => {
-
-
+const ItemList = ({ products }) => {
     return (
         <>
-            <div>{props.name}</div>
+            <ul>
+                {
+                    products.length > 0 ?
+                        products.map(item => (
+                            <Item
+                                key={item.id}
+                                name={item.title}
+                                price={item.price}
+                                image={item.image}
+                            />
+                        )) :
+                        <p>Cargando...</p>
+                }
+            </ul>
         </>
         // <div className='itemContainer'>
         //     {product.map((item, id) => {

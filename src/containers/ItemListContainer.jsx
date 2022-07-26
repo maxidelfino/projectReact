@@ -25,7 +25,8 @@ const ItemListContainer = () => {
     return (
         <>
             <ItemCount initial={1} stock={10} onAdd={onAdd} />
-            <ul>
+            <ItemList products = {productList}/>
+            {/* <ul>
                 {
                     productList.length > 0 ?
                         productList.map(item => (
@@ -33,7 +34,7 @@ const ItemListContainer = () => {
                         )) :
                         <p>Cargando...</p>
                 }
-            </ul>
+            </ul> */}
         </>
     )
 }

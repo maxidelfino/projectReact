@@ -1,15 +1,15 @@
 import React from 'react'
 
-const Item = ({product}) => {
+const Item = (props) => {
     return (
         <section>
             <article>
                 <div>
-                    <h1>{product.title}</h1>
-                    <p>{product.description}</p>
+                    <h1>{props.name}</h1>
+                    <p>{props.price}</p>
                 </div>
                 <div>
-                    <p>{product.priceMes}</p>
+                   <img src={props.image} alt={props.name} />
                 </div>
             </article>
         </section>
