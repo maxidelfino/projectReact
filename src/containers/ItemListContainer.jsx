@@ -4,10 +4,6 @@ import ItemList from '../components/Pages/ItemList';
 import products from '../data/products.json';
 
 const ItemListContainer = () => {
-    const onAdd = (param) => {
-        console.log(`La cantidad comprada es ${param}`)
-    }
-
     const [productList, setProductList] = useState([]);
 
     const myPromise = (timeOut, products) => {
@@ -24,17 +20,7 @@ const ItemListContainer = () => {
 
     return (
         <>
-            <ItemCount initial={1} stock={10} onAdd={onAdd} />
             <ItemList products = {productList}/>
-            {/* <ul>
-                {
-                    productList.length > 0 ?
-                        productList.map(item => (
-                           <ItemList key={item.id} name={item.title}/>
-                        )) :
-                        <p>Cargando...</p>
-                }
-            </ul> */}
         </>
     )
 }
