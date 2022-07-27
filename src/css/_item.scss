@@ -2,19 +2,58 @@
 
 .itemContainer {
     display: grid;
-    grid-template-columns: repeat(3,1fr);
+    grid-template-columns: repeat(3, 200px);
     justify-content: space-around;
     align-items: center;
-    grid-gap: 50px;
-    
-    article {
+    grid-gap: 35px;
+    margin: 75px 200px 75px 200px;
+
+    .product-grid {
+        font-family: 'Montserrat', sans-serif;
+        text-align: center;
+        box-shadow: 0px 0px 25px rgba(0, 0, 0, 0.1);
         display: flex;
         justify-content: space-evenly;
         align-items: center;
         flex-direction: column;
-        height: 300px;
-        width: 300px;
-        border-radius: 7px;
-        background-color: $color-vino;
+
+        .product-image {
+            overflow: hidden;
+            position: relative;
+
+            img {
+                width: 100%;
+                height: auto;
+            }
+
+        }
+
+        .product-content {
+            padding: 17px 15px;
+
+            .title {
+                font-size: 16px;
+                font-weight: 700;
+                text-transform: capitalize;
+                margin: 0 0 7px;
+                color: #777;
+                transition: all 0.3s ease 0s;
+                text-decoration: none;
+                cursor: default;
+
+                &:hover {
+                    color: #000;
+                }
+
+            }
+
+            .price {
+                color: #777;
+                font-size: 14px;
+                font-weight: 700;
+            }
+
+        }
     }
+
 }

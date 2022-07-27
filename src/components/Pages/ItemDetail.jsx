@@ -1,21 +1,21 @@
 import React from 'react'
-import ItemCount from '../Pages/ItemCount';
+import ItemCount from './ItemCount';
 
 const ItemDetail = ({ products }) => {
   return (
     <>
-      <section>
-        <article>
-          <div>
-            <h1>{products.title}</h1>
-            <p>{products.price}</p>
-          </div>
-          <div>
-            <img src={products.image} alt={products.title} />
-          </div>
-        </article>
-      </section>
-      <ItemCount initial={1} stock={10}/>
+      <section className="itemContainer">
+            <article className="product-grid">
+                <div className="product-image">
+                    <img src={`${products.image}`} alt={products.name} />
+                </div>
+                <div className="product-content">
+                    <h3 className="title">{products.name}</h3>
+                    <p className="price">${products.price}</p>
+                    <ItemCount initial={1} stock={10}/>
+                </div>
+            </article>
+        </section>
     </>
   )
 }

@@ -1,5 +1,4 @@
 import React, { useState } from 'react';
-import ItemCount from '../components/Pages/ItemCount';
 import ItemList from '../components/Pages/ItemList';
 import products from '../data/products.json';
 

@@ -3,84 +3,84 @@
         "id": "1",
         "price": 2500,
         "title": "Remeras Santa Cruz - Varios Colores",
-        "image": "../assets/3.jpeg"
+        "image": "https://indumentaria-masculina.vercel.app/media/men/4.jpeg"
     },
     {
         "id": "2",
         "price": 2800,
         "title": "Remeras Rip Curl - Varios Colores",
-        "image": "../assets/5.jpeg"
+        "image": "https://indumentaria-masculina.vercel.app/media/men/4.jpeg"
     },
     {
         "id": "3",
         "price": 2750,
         "title": "Remeras Billabong - Varios Colores",
-        "image": "../assets/7.jpeg"
+        "image": "https://indumentaria-masculina.vercel.app/media/men/4.jpeg"
     },
     {
         "id": "4",
         "price": 2800,
         "title": "Remeras Rip Curl - Varios Colores",
-        "image": "../assets/9.jpeg"
+        "image": "https://indumentaria-masculina.vercel.app/media/men/4.jpeg"
     },
     {
         "id": "5",
         "price": 2600,
         "title": "Remeras Rusty - Varios Colores",
-        "image": "../assets/11.jpeg"
+        "image": "https://indumentaria-masculina.vercel.app/media/men/4.jpeg"
     },
     {
         "id": "6",
         "price": 2800,
         "title": "Remeras Rip Curl - Varios Colores",
-        "image": "../assets/13.jpeg"
+        "image": "https://indumentaria-masculina.vercel.app/media/men/4.jpeg"
     },
     {
         "id": "7",
         "price": 2800,
         "title": "Remeras Quiksilver - Varios Colores",
-        "image": "../assets/15.jpeg"
+        "image": "https://indumentaria-masculina.vercel.app/media/men/4.jpeg"
     },
     {
         "id": "8",
         "price": 2600,
         "title": "Remeras Volcom - Varios Colores",
-        "image": "../assets/18.jpeg"
+        "image": "https://indumentaria-masculina.vercel.app/media/men/4.jpeg"
     },
     {
         "id": "9",
         "price": 2750,
         "title": "Remeras Billabong - Varios Colores",
-        "image": "../assets/17.jpeg"
+        "image": "https://indumentaria-masculina.vercel.app/media/men/4.jpeg"
     },
     {
         "id": "10",
         "price": 3500,
         "title": "Camperas Vans - Varios Colores",
-        "image": "../assets/21.jpeg"
+        "image": "https://indumentaria-masculina.vercel.app/media/men/4.jpeg"
     },
     {
         "id": "11",
         "price": 3200,
         "title": "Camperas Hanqloose - Varios Colores",
-        "image": "../assets/23.jpeg"
+        "image": "https://indumentaria-masculina.vercel.app/media/men/4.jpeg"
     },
     {
         "id": "12",
         "price": 3000,
         "title": "Camperas Quiksilver - Varios Colores",
-        "image": "../assets/25.jpeg"
+        "image": "https://indumentaria-masculina.vercel.app/media/men/4.jpeg"
     },
     {
         "id": "13",
         "price": 3000,
         "title": "Buzos de Cuello redondo Vans - Varios Colores",
-        "image": "../assets/33.jpeg"
+        "image": "https://indumentaria-masculina.vercel.app/media/men/4.jpeg"
     },
     {
         "id": "14",
         "price": 3000,
         "title": "Buzos de Cuello redondo Vans - Varios Colores",
-        "image": "../assets/36.jpeg"
+        "image": "https://indumentaria-masculina.vercel.app/media/men/4.jpeg"
     }
 ]

@@ -1,5 +1,4 @@
 import React,{useState} from 'react'
-
 import ItemDetail from '../components/Pages/ItemDetail';
 import products from '../data/products.json';
 
@@ -15,8 +14,8 @@ const ItemDetailContainer = () => {
     });
   }
   myPromise()
-    .then(() => myPromise(5000, products[6]))
-    .then(() => setProductList(products[6]))
+    .then(() => myPromise(5000, products[7]))
+    .then(() => setProductList(products[7]))
 
   return (
     <>

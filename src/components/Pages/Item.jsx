@@ -2,14 +2,14 @@ import React from 'react'
 
 const Item = (props) => {
     return (
-        <section>
-            <article>
-                <div>
-                    <h1>{props.name}</h1>
-                    <p>{props.price}</p>
+        <section className="">
+            <article className="product-grid">
+                <div className="product-image">
+                    <img src={`${props.image}`} alt={props.name} />
                 </div>
-                <div>
-                   <img src={props.image} alt={props.name} />
+                <div className="product-content">
+                    <h3 className="title">{props.name}</h3>
+                    <p className="price">${props.price}</p>
                 </div>
             </article>
         </section>
