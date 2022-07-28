@@ -7,6 +7,9 @@
     display: flex;
     align-items: center;
     justify-content: space-between;
+    a{
+        text-decoration: none;
+    }
 
     h1 {
         color: #fff;
@@ -34,7 +37,7 @@
         list-style: none;
         display: flex;
 
-        a {
+        p {
             color: #fff;
             text-decoration: none;
             margin-right: 1rem;
@@ -58,12 +61,12 @@
             }
         }
 
-        li:hover a::before {
+        li:hover p::before {
             color: $color-pink;
 
         }
 
-        li:hover a::after {
+        li:hover p::after {
             color: $color-pink;
 
         }

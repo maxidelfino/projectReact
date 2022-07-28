@@ -2,22 +2,26 @@ const menuItems = [
     {
         title: 'Inicio',
         url: '#',
-        cName: 'navLinks' //className
+        cName: 'navLinks',
+        id: "/" //className
     },
     {
-        title: 'Proyectos',
+        title: 'Remeras', //Proyectos
         url: '#',
-        cName: 'navLinks'
+        cName: 'navLinks',
+        id: "category/remeras"
     },
     {
-        title: 'Planes y servicios',
+        title: 'Camperas', //Planes y servicios
         url: '#',
-        cName: 'navLinks'
+        cName: 'navLinks',
+        id: "category/camperas"
     },
     {
-        title: 'Contacto',
+        title: 'Buzos', //Contacto
         url: '#',
-        cName: 'navLinks'
+        cName: 'navLinks',
+        id: "category/buzos"
     }
 ]
 export default menuItems

@@ -1,9 +1,13 @@
 import React, { useState } from 'react';
 import ItemList from '../components/Pages/ItemList';
 import products from '../data/products.json';
+import {useParams} from 'react-router';
+import { useEffect } from 'react';
 
 const ItemListContainer = () => {
     const [productList, setProductList] = useState([]);
+
+    const {id} = useParams();
 
     const myPromise = (timeOut, products) => {
         return new Promise((resolve, reject) => {
@@ -13,9 +17,19 @@ const ItemListContainer = () => {
             console.log('se ejecuto la promesa');
         });
     }
-    myPromise()
-        .then(() => myPromise(5000, products))
-        .then(() => setProductList(products))
+    
+    useEffect(()=>{
+        if (id === undefined){
+            myPromise()
+            .then(() => myPromise(3500, products))
+            .then(() => setProductList(products))
+        } else {
+            myPromise()
+            .then(() => myPromise(3500, products.filter(item => item.categoryId === id)))
+            .then(() => setProductList(products.filter(item => item.categoryId === id)))
+            console.log(products.filter(item => item.categoryId === id))
+        }
+    },[id])
 
     return (
         <>

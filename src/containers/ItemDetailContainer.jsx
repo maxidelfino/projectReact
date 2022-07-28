@@ -14,7 +14,7 @@ const ItemDetailContainer = () => {
     });
   }
   myPromise()
-    .then(() => myPromise(5000, products[7]))
+    .then(() => myPromise(1, products[7]))
     .then(() => setProductList(products[7]))
 
   return (

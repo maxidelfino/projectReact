@@ -2,6 +2,7 @@ import React, { useState } from 'react'
 import BurgerBtn from './BurgerBtn'
 import menuItems from './MenuItems'
 import CartWidget from './CartWidget'
+import { Link } from 'react-router-dom'
 
 const Navbar = () => {
 
@@ -13,14 +14,16 @@ const Navbar = () => {
     return (
         <>
             <nav className="NavbarItems">
-                <h1 className="navbar-logo"><i class="fa-solid fa-angle-left"></i>Max<span>Design</span><i class="fa-solid fa-angle-right"></i></h1>
+                <Link to='/'><h1 className="navbar-logo"><i class="fa-solid fa-angle-left"></i>Rop<span>Des</span><i class="fa-solid fa-angle-right"></i></h1></Link>
                 <ul className={`navbarLinks ${clicked ? 'active' : ''}`}>
                     {menuItems.map((item, index) => {
                         return (
                             <li key={index}>
-                                <a className={item.cName} href={item.url}>
-                                    {item.title}
-                                </a>
+                                <Link to={item.id}>
+                                    <p className={item.cName} href={item.url}>
+                                        {item.title}
+                                    </p>
+                                </Link>
                             </li>
                         )
                     })}
@@ -28,7 +31,7 @@ const Navbar = () => {
                 <div>
                     <BurgerBtn clicked={clicked} handleClick={handleClick} />
                     <div className="cardWidget">
-                        <CartWidget className="cardWidget"/>
+                        <CartWidget className="cardWidget" />
                     </div>
                 </div>
             </nav>

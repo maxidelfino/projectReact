@@ -1,100 +1,114 @@
 [
     {
         "id": "1",
+        "categoryId": "remeras",
         "price": 2500,
         "title": "Remeras Santa Cruz - Varios Colores",
-        "image": "https://indumentaria-masculina.vercel.app/media/men/4.jpeg",
+        "image": "https://indumentaria-masculina.vercel.app/media/men/3.jpeg",
         "description": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Tempore ex laboriosam at, assumenda laudantium libero aspernatur fugiat dolor optio ut corrupti distinctio nesciunt consequuntur, illum iste, eaque eveniet! Quis, asperiores?"
     },
     {
         "id": "2",
+        "categoryId": "remeras",
         "price": 2800,
         "title": "Remeras Rip Curl - Varios Colores",
-        "image": "https://indumentaria-masculina.vercel.app/media/men/4.jpeg",
+        "image": "https://indumentaria-masculina.vercel.app/media/men/5.jpeg",
         "description": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Tempore ex laboriosam at, assumenda laudantium libero aspernatur fugiat dolor optio ut corrupti distinctio nesciunt consequuntur, illum iste, eaque eveniet! Quis, asperiores?"
     },
     {
         "id": "3",
+        "categoryId": "remeras",
         "price": 2750,
         "title": "Remeras Billabong - Varios Colores",
-        "image": "https://indumentaria-masculina.vercel.app/media/men/4.jpeg",
+        "image": "https://indumentaria-masculina.vercel.app/media/men/7.jpeg",
         "description": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Tempore ex laboriosam at, assumenda laudantium libero aspernatur fugiat dolor optio ut corrupti distinctio nesciunt consequuntur, illum iste, eaque eveniet! Quis, asperiores?"
     },
     {
         "id": "4",
+        "categoryId": "remeras",
         "price": 2800,
         "title": "Remeras Rip Curl - Varios Colores",
-        "image": "https://indumentaria-masculina.vercel.app/media/men/4.jpeg",
+        "image": "https://indumentaria-masculina.vercel.app/media/men/9.jpeg",
         "description": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Tempore ex laboriosam at, assumenda laudantium libero aspernatur fugiat dolor optio ut corrupti distinctio nesciunt consequuntur, illum iste, eaque eveniet! Quis, asperiores?"
     },
     {
         "id": "5",
+        "categoryId": "remeras",
         "price": 2600,
         "title": "Remeras Rusty - Varios Colores",
-        "image": "https://indumentaria-masculina.vercel.app/media/men/4.jpeg",
+        "image": "https://indumentaria-masculina.vercel.app/media/men/11.jpeg",
         "description": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Tempore ex laboriosam at, assumenda laudantium libero aspernatur fugiat dolor optio ut corrupti distinctio nesciunt consequuntur, illum iste, eaque eveniet! Quis, asperiores?"
     },
     {
         "id": "6",
+        "categoryId": "remeras",
         "price": 2800,
         "title": "Remeras Rip Curl - Varios Colores",
-        "image": "https://indumentaria-masculina.vercel.app/media/men/4.jpeg",
+        "image": "https://indumentaria-masculina.vercel.app/media/men/13.jpeg",
         "description": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Tempore ex laboriosam at, assumenda laudantium libero aspernatur fugiat dolor optio ut corrupti distinctio nesciunt consequuntur, illum iste, eaque eveniet! Quis, asperiores?"
     },
     {
         "id": "7",
+        "categoryId": "remeras",
         "price": 2800,
         "title": "Remeras Quiksilver - Varios Colores",
-        "image": "https://indumentaria-masculina.vercel.app/media/men/4.jpeg",
+        "image": "https://indumentaria-masculina.vercel.app/media/men/15.jpeg",
         "description": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Tempore ex laboriosam at, assumenda laudantium libero aspernatur fugiat dolor optio ut corrupti distinctio nesciunt consequuntur, illum iste, eaque eveniet! Quis, asperiores?"
     },
     {
         "id": "8",
+        "categoryId": "remeras",
         "price": 2600,
         "title": "Remeras Volcom - Varios Colores",
-        "image": "https://indumentaria-masculina.vercel.app/media/men/4.jpeg",
+        "image": "https://indumentaria-masculina.vercel.app/media/men/17.jpeg",
         "description": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Tempore ex laboriosam at, assumenda laudantium libero aspernatur fugiat dolor optio ut corrupti distinctio nesciunt consequuntur, illum iste, eaque eveniet! Quis, asperiores?"
     },
     {
         "id": "9",
+        "categoryId": "remeras",
         "price": 2750,
         "title": "Remeras Billabong - Varios Colores",
-        "image": "https://indumentaria-masculina.vercel.app/media/men/4.jpeg",
+        "image": "https://indumentaria-masculina.vercel.app/media/men/18.jpeg",
         "description": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Tempore ex laboriosam at, assumenda laudantium libero aspernatur fugiat dolor optio ut corrupti distinctio nesciunt consequuntur, illum iste, eaque eveniet! Quis, asperiores?"
     },
     {
         "id": "10",
+        "categoryId": "camperas",
         "price": 3500,
         "title": "Camperas Vans - Varios Colores",
-        "image": "https://indumentaria-masculina.vercel.app/media/men/4.jpeg",
+        "image": "https://indumentaria-masculina.vercel.app/media/men/21.jpeg",
         "description": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Tempore ex laboriosam at, assumenda laudantium libero aspernatur fugiat dolor optio ut corrupti distinctio nesciunt consequuntur, illum iste, eaque eveniet! Quis, asperiores?"
     },
     {
         "id": "11",
+        "categoryId": "camperas",
         "price": 3200,
         "title": "Camperas Hanqloose - Varios Colores",
-        "image": "https://indumentaria-masculina.vercel.app/media/men/4.jpeg",
+        "image": "https://indumentaria-masculina.vercel.app/media/men/23.jpeg",
         "description": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Tempore ex laboriosam at, assumenda laudantium libero aspernatur fugiat dolor optio ut corrupti distinctio nesciunt consequuntur, illum iste, eaque eveniet! Quis, asperiores?"
     },
     {
         "id": "12",
+        "categoryId": "camperas",
         "price": 3000,
         "title": "Camperas Quiksilver - Varios Colores",
-        "image": "https://indumentaria-masculina.vercel.app/media/men/4.jpeg",
+        "image": "https://indumentaria-masculina.vercel.app/media/men/25.jpeg",
         "description": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Tempore ex laboriosam at, assumenda laudantium libero aspernatur fugiat dolor optio ut corrupti distinctio nesciunt consequuntur, illum iste, eaque eveniet! Quis, asperiores?"
     },
     {
         "id": "13",
+        "categoryId": "buzos",
         "price": 3000,
         "title": "Buzos de Cuello redondo Vans - Varios Colores",
-        "image": "https://indumentaria-masculina.vercel.app/media/men/4.jpeg",
+        "image": "https://indumentaria-masculina.vercel.app/media/men/33.jpeg",
         "description": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Tempore ex laboriosam at, assumenda laudantium libero aspernatur fugiat dolor optio ut corrupti distinctio nesciunt consequuntur, illum iste, eaque eveniet! Quis, asperiores?"
     },
     {
         "id": "14",
+        "categoryId": "buzos",
         "price": 3000,
         "title": "Buzos de Cuello redondo Vans - Varios Colores",
-        "image": "https://indumentaria-masculina.vercel.app/media/men/4.jpeg",
+        "image": "https://indumentaria-masculina.vercel.app/media/men/36.jpeg",
         "description": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Tempore ex laboriosam at, assumenda laudantium libero aspernatur fugiat dolor optio ut corrupti distinctio nesciunt consequuntur, illum iste, eaque eveniet! Quis, asperiores?"
     }
 ]

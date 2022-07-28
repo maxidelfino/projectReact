@@ -13,6 +13,9 @@
   align-items: center;
   justify-content: space-between;
 }
+.NavbarItems a {
+  text-decoration: none;
+}
 .NavbarItems h1 {
   color: #fff;
   font-weight: 500;
@@ -34,12 +37,12 @@
   list-style: none;
   display: flex;
 }
-.NavbarItems .navbarLinks a {
+.NavbarItems .navbarLinks p {
   color: #fff;
   text-decoration: none;
   margin-right: 1rem;
 }
-.NavbarItems .navbarLinks a::before {
+.NavbarItems .navbarLinks p::before {
   content: "<";
   color: transparent;
   font-weight: bold;
@@ -47,7 +50,7 @@
   top: 1px;
   transition: all ease 0.3s;
 }
-.NavbarItems .navbarLinks a::after {
+.NavbarItems .navbarLinks p::after {
   content: ">";
   color: transparent;
   font-weight: bold;
@@ -55,10 +58,10 @@
   top: 1px;
   transition: all ease 0.3s;
 }
-.NavbarItems .navbarLinks li:hover a::before {
+.NavbarItems .navbarLinks li:hover p::before {
   color: #fe30af;
 }
-.NavbarItems .navbarLinks li:hover a::after {
+.NavbarItems .navbarLinks li:hover p::after {
   color: #fe30af;
 }
 
