@@ -18,8 +18,8 @@ const ItemCount = (props) => {
         }
     }
 
-    const onAdd = (param) => {
-        console.log(`La cantidad comprada es ${param}`)
+    const onAdd = () => {
+        console.log(`La cantidad comprada es ${counter}`)
     }
     return (
         <>
@@ -29,7 +29,7 @@ const ItemCount = (props) => {
                     <p>{counter}</p>
                     <button className='countBtn' onClick={add}>+</button>
                 </div>
-                <button className='countBtn' onClick={onAdd(counter)}>Agregar al carrito</button> {/* Recordemos que la function onAdd recibe un parámetro!!! */}
+                <button className='countBtn' onClick={onAdd}>Agregar al carrito</button> {/* Recordemos que la function onAdd recibe un parámetro!!! */}
             </div>
         </>
     )
