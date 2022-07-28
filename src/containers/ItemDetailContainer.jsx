@@ -14,7 +14,6 @@ const ItemDetailContainer = () => {
       setTimeout(() => {
         resolve(products);
       }, timeOut);
-      console.log('se ejecuto la promesa');
     });
   }
   useEffect(()=>{
@@ -30,8 +29,7 @@ const ItemDetailContainer = () => {
     }
 },[id])
   myPromise()
-    .then(() => myPromise(1, products[7]))
-    .then(() => setProductList(products[7]))
+    .then(() => setProductList(products[id-1]))
 
   return (
     <>
