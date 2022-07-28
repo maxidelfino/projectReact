@@ -52,8 +52,46 @@
                 font-size: 14px;
                 font-weight: 700;
             }
-
+        }
+    }
+    .product-description {
+        grid-column: 2/4;
+        width: 500px;
+        display: flex;
+        text-align: center;
+        flex-direction: column;
+        align-items: center;
+        p{
+            padding: 10px;
+        }
+        .price{
+            color: #777;
+            font-size: 23px;
+            font-weight: 700;
         }
     }
 
+}
+.countContainer{
+    width: 200px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    .count {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding: 10px 0 10px 0;
+    }
+    .countBtn {
+        cursor: pointer;
+        padding: 10px;
+        border-radius: 7px;
+        border-style: none;
+        transition: all .7s;
+        &:hover {
+            background-color: #000;
+            color:#fff;
+        }
+    }
 }

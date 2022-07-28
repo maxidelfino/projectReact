@@ -158,7 +158,7 @@
   font-size: 1.35rem;
   margin: 35px;
 }
-.hero div button {
+.hero div .btn {
   cursor: pointer;
   margin-left: 150px;
   padding: 10px;
@@ -211,6 +211,46 @@
   color: #777;
   font-size: 14px;
   font-weight: 700;
+}
+.itemContainer .product-description {
+  grid-column: 2/4;
+  width: 500px;
+  display: flex;
+  text-align: center;
+  flex-direction: column;
+  align-items: center;
+}
+.itemContainer .product-description p {
+  padding: 10px;
+}
+.itemContainer .product-description .price {
+  color: #777;
+  font-size: 23px;
+  font-weight: 700;
+}
+
+.countContainer {
+  width: 200px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+.countContainer .count {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px 0 10px 0;
+}
+.countContainer .countBtn {
+  cursor: pointer;
+  padding: 10px;
+  border-radius: 7px;
+  border-style: none;
+  transition: all 0.7s;
+}
+.countContainer .countBtn:hover {
+  background-color: #000;
+  color: #fff;
 }
 
 @media (max-width: 768px) {

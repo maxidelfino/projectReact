@@ -1,4 +1,4 @@
-import React, {useState} from 'react';
+import React, { useState } from 'react';
 
 
 const ItemCount = (props) => {
@@ -6,14 +6,14 @@ const ItemCount = (props) => {
 
     const add = () => {
         if (counter < props.stock) {
-            const aux = counter+1; //solo funciona con +1 y no con ++
+            const aux = counter + 1; //solo funciona con +1 y no con ++
             setCounter(aux);
         }
     }
 
-    const subtract  = () => {
-        if (counter > props.stock) {
-            const aux = counter-1;
+    const subtract = () => {
+        if (counter <= props.stock && counter >= props.initial) {
+            const aux = counter - 1;
             setCounter(aux);
         }
     }
@@ -23,12 +23,14 @@ const ItemCount = (props) => {
     }
     return (
         <>
-            <div>
-                <button className='btnCount' onClick={subtract}>-</button>
-                <p>{counter}</p>
-                <button className='btnCount' onClick={add}>+</button>
+            <div className='countContainer'>
+                <div className='count'>
+                    <button className='countBtn' onClick={subtract}>-</button>
+                    <p>{counter}</p>
+                    <button className='countBtn' onClick={add}>+</button>
+                </div>
+                <button className='countBtn' onClick={onAdd(counter)}>Agregar al carrito</button> {/* Recordemos que la function onAdd recibe un parámetro!!! */}
             </div>
-            <button className='btnCount' onClick={onAdd(counter)}>Agregar al carrito</button> {/* Recordemos que la function onAdd recibe un parámetro!!! */}
         </>
     )
 }
