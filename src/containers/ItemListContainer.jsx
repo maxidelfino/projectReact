@@ -21,11 +21,11 @@ const ItemListContainer = () => {
     useEffect(()=>{
         if (id === undefined){
             myPromise()
-            .then(() => myPromise(3500, products))
+            .then(() => myPromise(1500, products))
             .then(() => setProductList(products))
         } else {
             myPromise()
-            .then(() => myPromise(3500, products.filter(item => item.categoryId === id)))
+            .then(() => myPromise(1500, products.filter(item => item.categoryId === id)))
             .then(() => setProductList(products.filter(item => item.categoryId === id)))
             console.log(products.filter(item => item.categoryId === id))
         }

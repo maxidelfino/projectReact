@@ -197,6 +197,9 @@
 .itemContainer .product-grid .product-content {
   padding: 17px 15px;
 }
+.itemContainer .product-grid .product-content a {
+  text-decoration: none;
+}
 .itemContainer .product-grid .product-content .title {
   font-size: 16px;
   font-weight: 700;
@@ -205,7 +208,7 @@
   color: #777;
   transition: all 0.3s ease 0s;
   text-decoration: none;
-  cursor: default;
+  cursor: pointer;
 }
 .itemContainer .product-grid .product-content .title:hover {
   color: #000;

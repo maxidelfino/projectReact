@@ -3,7 +3,7 @@ const menuItems = [
         title: 'Inicio',
         url: '#',
         cName: 'navLinks',
-        id: "/" //className
+        id: "/category" //className
     },
     {
         title: 'Remeras', //Proyectos
