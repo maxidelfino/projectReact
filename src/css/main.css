@@ -247,14 +247,19 @@
   align-items: center;
   padding: 10px 0 10px 0;
 }
-.countContainer .countBtn {
+.countContainer .active {
+  opacity: 0;
+  cursor: default;
+}
+
+.countBtn {
   cursor: pointer;
   padding: 10px;
   border-radius: 7px;
   border-style: none;
   transition: all 0.7s;
 }
-.countContainer .countBtn:hover {
+.countBtn:hover {
   background-color: #000;
   color: #fff;
 }

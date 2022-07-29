@@ -1,5 +1,5 @@
 import React,{useState} from 'react'
-import ItemDetail from '../components/Pages/ItemDetail';
+import ItemDetail from '../components/ItemDetail/ItemDetail';
 import products from '../data/products.json';
 import {useParams} from 'react-router';
 import { useEffect } from 'react';

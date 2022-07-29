@@ -1,5 +1,5 @@
 import React from 'react'
-import ItemCount from './ItemCount';
+import ItemCountLogic from '../ItemCount/ItemCountLogic';
 
 const ItemDetail = ({ products }) => {
   return (
@@ -16,7 +16,9 @@ const ItemDetail = ({ products }) => {
             <article className='product-description'>
               <p>{products.description}</p>
               <p className="price">${products.price}</p>
-              <ItemCount initial={1} stock={10}/>
+              <div>
+              <ItemCountLogic initial={1} stock={10}/>
+              </div>
               <p>Stock: 10</p>
             </article>
         </section>

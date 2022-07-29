@@ -31,7 +31,7 @@ const Navbar = () => {
                 <div>
                     <BurgerBtn clicked={clicked} handleClick={handleClick} />
                     <div className="cardWidget">
-                        <CartWidget className="cardWidget" />
+                        <CartWidget className="cardWidget" count={23} />
                     </div>
                 </div>
             </nav>

@@ -87,15 +87,19 @@
         align-items: center;
         padding: 10px 0 10px 0;
     }
-    .countBtn {
-        cursor: pointer;
-        padding: 10px;
-        border-radius: 7px;
-        border-style: none;
-        transition: all .7s;
-        &:hover {
-            background-color: #000;
-            color:#fff;
-        }
+    .active {
+        opacity:0;
+        cursor: default;
+    }
+}
+.countBtn {
+    cursor: pointer;
+    padding: 10px;
+    border-radius: 7px;
+    border-style: none;
+    transition: all .7s;
+    &:hover {
+        background-color: #000;
+        color:#fff;
     }
 }
