@@ -1,12 +1,15 @@
-import React, { useState } from 'react';
+import React, { useState, useContext } from 'react';
 import ItemCount from './ItemCount';
 import Checkout from '../Cart/Checkout';
+import { CartContext } from '../../context/CartContext';
 
 
 const ItemCountLogic = (props) => {
-    const [counter, setCounter] = useState(props.initial)
+    const [counter, setCounter] = useState(props.initial);
 
     const [checkout, setCheckout] = useState(true);
+    
+    const test = useContext(CartContext);
 
     const add = () => {
         if (counter < props.stock) {
@@ -26,6 +29,7 @@ const ItemCountLogic = (props) => {
         if (counter !== 0 && checkout===true) {
             alert(`La cantidad comprada es ${counter}`);
             setCheckout(false);
+            test.addToCart(props.products);
         }else {
             setCheckout(true);
         }

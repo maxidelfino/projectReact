@@ -5,21 +5,23 @@ import ItemListContainer from './containers/ItemListContainer';
 import Hero from './components/Header/Hero';
 import ItemDetailContainer from './containers/ItemDetailContainer';
 import Cart from './components/Cart/Cart';
+import CartContextProvider from './context/CartContext';
 
 function App() {
   return (
     <>
-      <BrowserRouter>
-        <NavBar />
-        <Routes>
-          <Route path='/' element={<Hero />} />
-          <Route path='/category' element={<ItemListContainer />} />
-          <Route path='/category/:id' element={<ItemListContainer />} />
-          <Route path='/item/:id' element={<ItemDetailContainer />} />
-          <Route path='/cart' element={<Cart/>}/>
-        </Routes>
-      </BrowserRouter>
-
+      <CartContextProvider>
+        <BrowserRouter>
+          <NavBar />
+          <Routes>
+            <Route path='/' element={<Hero />} />
+            <Route path='/category' element={<ItemListContainer />} />
+            <Route path='/category/:id' element={<ItemListContainer />} />
+            <Route path='/item/:id' element={<ItemDetailContainer />} />
+            <Route path='/cart' element={<Cart />} />
+          </Routes>
+        </BrowserRouter>
+      </CartContextProvider>
     </>
   );
 }
