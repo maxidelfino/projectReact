@@ -14,7 +14,6 @@ const ItemListContainer = () => {
             setTimeout(() => {
                 resolve(products);
             }, timeOut);
-            console.log('se ejecuto la promesa');
         });
     }
     

@@ -29,7 +29,7 @@ const ItemCountLogic = (props) => {
         if (counter !== 0 && checkout===true) {
             alert(`La cantidad comprada es ${counter}`);
             setCheckout(false);
-            test.addToCart(props.products);
+            test.addToCart(props.products,counter);
         }else {
             setCheckout(true);
         }

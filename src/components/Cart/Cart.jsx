@@ -23,7 +23,7 @@ const Cart = () => {
                             </div>
                             <div className="product-price">
                                 <p className="price"><span>Precio: </span>${item.price}</p>
-                                <p className="quantity"><span>Cantidad: </span>2</p>
+                                <p className="quantity"><span>Cantidad: </span>{item.quantity}</p>
                             </div>
                             <div className="removeProducts">
                                 <ItemCountLogic/>
