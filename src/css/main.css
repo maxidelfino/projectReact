@@ -264,6 +264,57 @@
   color: #fff;
 }
 
+.itemCart .product-cart {
+  margin: 50px;
+  display: grid;
+  grid-template-columns: 200px 170px 1fr 1fr;
+  grid-template-rows: 150px 150px;
+}
+.itemCart .product-cart span {
+  font-weight: bold;
+  color: #000;
+}
+.itemCart .product-cart img {
+  height: 300px;
+  width: 200px;
+  border-radius: 10px;
+  -webkit-border-radius: 10px;
+  -moz-border-radius: 10px;
+  -ms-border-radius: 10px;
+  -o-border-radius: 10px;
+  margin-right: 80px;
+}
+.itemCart .product-cart .product-content {
+  display: flex;
+  align-items: center;
+  grid-column: 2/5;
+  padding-left: 50px;
+}
+.itemCart .product-cart .product-content h3 {
+  font-size: 16px;
+  font-weight: 700;
+  text-transform: capitalize;
+  margin: 0 0 7px;
+  color: #777;
+  transition: all 0.3s ease 0s;
+}
+.itemCart .product-cart .product-content a {
+  text-decoration: none;
+}
+.itemCart .product-cart .product-price {
+  grid-column: 2;
+  grid-row: 2/3;
+  padding-left: 50px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+.itemCart .product-cart .removeProducts {
+  grid-column: 3/5;
+  grid-row: 2/3;
+  padding: 50px 0 0 50px;
+}
+
 @media (max-width: 768px) {
   .NavbarItems {
     z-index: 10;
