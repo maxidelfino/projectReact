@@ -1,11 +1,19 @@
 import React, { useContext } from 'react'
 import { Link } from 'react-router-dom'
 import { CartContext } from '../../context/CartContext'
-import ItemCountLogic from '../ItemCount/ItemCountLogic'
 
 const Cart = () => {
     let test = useContext(CartContext)
     console.log(test.cartList) //no olvidemos que nuestro array del carrito es cartList!!!
+
+    const removeItem = (id) =>{
+        let item = test.cartList.find( item => item.id === id);
+        console.log(item.quantity);
+        item.quantity = item.quantity - 1;
+        console.log(item);
+        console.log(item.quantity);
+    }
+
     return (
         <>
             <div>Cart</div>
@@ -26,7 +34,12 @@ const Cart = () => {
                                 <p className="quantity"><span>Cantidad: </span>{item.quantity}</p>
                             </div>
                             <div className="removeProducts">
-                                <ItemCountLogic/>
+                                <div className='countContainer'>
+                                    <div className='count'>
+                                        <button className='countBtn'onClick={() => removeItem(item.id)}>Quitar un producto</button>
+                                    </div>
+                                    <button className="countBtn">Limpiar carrito</button>
+                                </div>
                             </div>
                         </article>
                     ))
