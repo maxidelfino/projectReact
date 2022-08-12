@@ -1,6 +1,9 @@
 @import "./variables";
 
 .NavbarItems {
+    z-index: 100;
+    width: 100vw;
+    position: fixed;
     background-color: $color-purple;
     height: 60px;
     padding: .4rem;
