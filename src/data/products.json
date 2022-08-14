@@ -60,7 +60,7 @@
         "categoryId": "remeras",
         "price": 2600,
         "title": "Remeras Volcom - Varios Colores",
-        "image": "https://indumentaria-masculina.vercel.app/media/men/17.jpeg",
+        "image": "https://indumentaria-masculina.vercel.app/media/men/18.jpeg",
         "description": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Tempore ex laboriosam at, assumenda laudantium libero aspernatur fugiat dolor optio ut corrupti distinctio nesciunt consequuntur, illum iste, eaque eveniet! Quis, asperiores?"
     },
     {
@@ -68,7 +68,7 @@
         "categoryId": "remeras",
         "price": 2750,
         "title": "Remeras Billabong - Varios Colores",
-        "image": "https://indumentaria-masculina.vercel.app/media/men/18.jpeg",
+        "image": "https://indumentaria-masculina.vercel.app/media/men/17.jpeg",
         "description": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Tempore ex laboriosam at, assumenda laudantium libero aspernatur fugiat dolor optio ut corrupti distinctio nesciunt consequuntur, illum iste, eaque eveniet! Quis, asperiores?"
     },
     {
@@ -107,7 +107,7 @@
         "id": "14",
         "categoryId": "buzos",
         "price": 3000,
-        "title": "Buzos de Cuello redondo Vans - Varios Colores",
+        "title": "Buzos de Cuello redondo Volcom - Varios Colores",
         "image": "https://indumentaria-masculina.vercel.app/media/men/36.jpeg",
         "description": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Tempore ex laboriosam at, assumenda laudantium libero aspernatur fugiat dolor optio ut corrupti distinctio nesciunt consequuntur, illum iste, eaque eveniet! Quis, asperiores?"
     }
