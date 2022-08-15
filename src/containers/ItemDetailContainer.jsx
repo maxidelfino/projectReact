@@ -1,15 +1,14 @@
-import React,{useState} from 'react'
+import React, { useState, useEffect } from 'react'
 import ItemDetail from '../components/ItemDetail/ItemDetail';
 import products from '../data/products.json';
-import {useParams} from 'react-router';
-import { useEffect } from 'react';
-import { doc, getDocs } from "firebase/firestore";
+import { useParams } from 'react-router';
+import { doc, getDoc, query, where } from "firebase/firestore";
 import { db } from '../utils/firebaseConfig'
 
 const ItemDetailContainer = () => {
   const [productList, setProductList] = useState({});
 
-  const {id} = useParams();
+  const { id } = useParams();
 
   // const myPromise = (timeOut, products) => {
   //   return new Promise((resolve, reject) => {
@@ -18,12 +17,12 @@ const ItemDetailContainer = () => {
   //     }, timeOut);
   //   });
   // }
-  useEffect(()=>{
-    getDocs(doc(db, 'products', '1'))
-    .then(res => setProductList({
-      id: res.id,
-      ...res.data()
-    }))
+  useEffect(() => {
+    getDoc(doc(db, 'products', id))
+      .then(res => setProductList({
+        id: res.id,
+        ...res.data()
+      }))
 
     // if (id === undefined){
     //     myPromise()
@@ -35,7 +34,7 @@ const ItemDetailContainer = () => {
     //     .then(() => setProductList(products.filter(item => item.id === id)))
     //     console.log(products.filter(item => item.id === id))
     // }
-},[id])
+  }, [id])
   // myPromise()
   //   .then(() => setProductList(products[id-1]))
 
