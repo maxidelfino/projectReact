@@ -16,6 +16,7 @@ const Cart = () => {
                             <button className='countBtn clearBtn' onClick={test.clearCart}>Limpiar carrito</button>
                             <div className='price'>
                                 <div>Precio total: <b>${test.totalPrice()}</b></div>
+                                <div>Cantidad de productos: <b>{test.totalProducts()}</b></div>
                             </div>
                             <div className='finishContainer'>
                                 <Link to='buy'><button className='finishBtn countBtn'>Finalizar Compra</button></Link>

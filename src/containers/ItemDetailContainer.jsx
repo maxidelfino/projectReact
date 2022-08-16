@@ -1,8 +1,7 @@
 import React, { useState, useEffect } from 'react'
 import ItemDetail from '../components/ItemDetail/ItemDetail';
-import products from '../data/products.json';
 import { useParams } from 'react-router';
-import { doc, getDoc, query, where } from "firebase/firestore";
+import { doc, getDoc } from "firebase/firestore";
 import { db } from '../utils/firebaseConfig'
 
 const ItemDetailContainer = () => {
@@ -10,20 +9,20 @@ const ItemDetailContainer = () => {
 
   const { id } = useParams();
 
-  // const myPromise = (timeOut, products) => {
-  //   return new Promise((resolve, reject) => {
-  //     setTimeout(() => {
-  //       resolve(products);
-  //     }, timeOut);
-  //   });
-  // }
   useEffect(() => {
     getDoc(doc(db, 'products', id))
-      .then(res => setProductList({
-        id: res.id,
-        ...res.data()
-      }))
-
+    .then(res => setProductList({
+      id: res.id,
+      ...res.data()
+    }))
+    // const myPromise = (timeOut, products) => {
+    //   return new Promise((resolve, reject) => {
+    //     setTimeout(() => {
+    //       resolve(products);
+    //     }, timeOut);
+    //   });
+    // }
+    
     // if (id === undefined){
     //     myPromise()
     //     .then(() => myPromise(1000, products))

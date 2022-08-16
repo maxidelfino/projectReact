@@ -19,9 +19,8 @@ const ItemDetail = ({ products }) => {
           <p>{products.description}</p>
           <p className="price">${products.price}</p>
           <div>
-            <ItemCountLogic initial={1} stock={10} products={products}/>
+            <ItemCountLogic initial={1} stock={products.stock} products={products}/>
           </div>
-          <p>Stock: 10</p>
         </article>
       </section>
     </>

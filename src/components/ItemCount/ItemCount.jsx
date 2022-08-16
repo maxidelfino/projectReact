@@ -10,6 +10,7 @@ const ItemCount = (props) => {
                     <button className='countBtn' onClick={props.add}>+</button>
                 </div>
                 <button className={`countBtn ${props.counter === 0 ? 'active' : ''}`} onClick={props.counter === 0 ? '' : props.onAdd}>Agregar al carrito</button> {/* Recordemos que la function onAdd recibe un parámetro!!! */}
+                <p>Stock: {props.stock}</p>
             </div>
         </>
     )

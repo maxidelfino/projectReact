@@ -37,7 +37,7 @@ const ItemCountLogic = (props) => {
         <>
          {
             checkout === true 
-            ?  <ItemCount add={add} subtract={subtract} onAdd={onAdd} counter={counter} />
+            ?  <ItemCount add={add} subtract={subtract} onAdd={onAdd} counter={counter} stock={props.stock} />
             :  <Checkout onAdd={onAdd}/>
          }
         </>
