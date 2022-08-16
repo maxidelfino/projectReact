@@ -1,10 +1,48 @@
+import { collection, doc, increment, serverTimestamp, setDoc, updateDoc } from 'firebase/firestore'
 import React, { useContext } from 'react'
 import { Link } from 'react-router-dom'
 import { CartContext } from '../../context/CartContext'
+import { db } from '../../utils/firebaseConfig'
 
 const Cart = () => {
     let test = useContext(CartContext)
     console.log(test.cartList) //no olvidemos que nuestro array del carrito es cartList!!!
+
+    const createOrder = () => {
+        let itemsForDB = test.cartList.map(item => ({
+            id: item.id,
+            title: item.title,
+            price: item.price,
+            quantity: item.quantity
+        }))
+        let order = {
+            buyer: {
+                email: "max@des.com",
+                name: "Maxi Delfino",
+                phone: "34156536"
+            },
+            date: serverTimestamp(),
+            items: itemsForDB,
+            total: test.totalProducts()
+        }
+        console.log(order);
+        const createOrderRef = async () => {
+            const newOrderRef = doc(collection(db, 'orders'));
+            await setDoc(newOrderRef, order);
+            return newOrderRef;
+        }
+        createOrderRef()
+            .then(res => alert(`Tu orden de compra se realizo con éxito! Recuerda tu ID para seguir el envío ${res.id}`))
+
+        test.cartList.forEach(async (item) => {
+            const itemRef = doc(db, 'products', item.id);
+            await updateDoc(itemRef,{
+                stock: increment(-item.quantity)
+            })
+        });
+        test.clearCart();
+    }
+
     return (
         <>
             <Link to={'/category'}><button className='countBtn back'>Volver</button></Link>
@@ -19,7 +57,7 @@ const Cart = () => {
                                 <div>Cantidad de productos: <b>{test.totalProducts()}</b></div>
                             </div>
                             <div className='finishContainer'>
-                                <Link to='buy'><button className='finishBtn countBtn'>Finalizar Compra</button></Link>
+                                <button className='finishBtn countBtn' onClick={createOrder}>Finalizar Compra</button>
                             </div>
                         </section>
                         {
