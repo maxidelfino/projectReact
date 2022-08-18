@@ -5,9 +5,7 @@ import { CartContext } from '../../context/CartContext'
 import { db } from '../../utils/firebaseConfig'
 
 const Cart = () => {
-    let test = useContext(CartContext)
-    console.log(test.cartList) //no olvidemos que nuestro array del carrito es cartList!!!
-
+    let test = useContext(CartContext);
     const createOrder = () => {
         let itemsForDB = test.cartList.map(item => ({
             id: item.id,
@@ -25,18 +23,20 @@ const Cart = () => {
             items: itemsForDB,
             total: test.totalProducts()
         }
-        console.log(order);
         const createOrderRef = async () => {
             const newOrderRef = doc(collection(db, 'orders'));
             await setDoc(newOrderRef, order);
             return newOrderRef;
         }
         createOrderRef()
-            .then(res => alert(`Tu orden de compra se realizo con éxito! Recuerda tu ID para seguir el envío ${res.id}`))
+            .then(res => {
+                alert(`Tu orden de compra se realizo con éxito! Recuerda tu ID para seguir el envío ${res.id}`)
+                return res.id;
+            })
 
         test.cartList.forEach(async (item) => {
             const itemRef = doc(db, 'products', item.id);
-            await updateDoc(itemRef,{
+            await updateDoc(itemRef, {
                 stock: increment(-item.quantity)
             })
         });
