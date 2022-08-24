@@ -1,0 +1,55 @@
+@import "./variables";
+.footer {
+    height: 200px;
+    width: 100%;
+    background: rgba(230, 230, 230, 0.278);
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    justify-items: center;
+    align-items: center;
+    position: relative;
+    bottom: 0;
+    .footer-col-1 {
+        cursor: pointer;
+        a {
+            text-decoration: none;
+        }
+        h1 {
+            color: $color-vino;
+            font-weight: 500;
+            transition: color ease .25s;
+    
+            &:hover {
+                color: $color-pink;
+                span {
+                    color: $color-vino;
+                }
+            }
+    
+            span {
+                color: $color-pink;
+                font-weight: 100;
+                transition: color ease .25s;
+    
+                &:hover {
+                    color: $color-vino;
+                }
+            }
+        }
+    }
+    .footer-col-2 {
+        text-align: center;
+        padding: 0 20px;
+    }
+    .footer-col-3 {
+        transition: color ease .25s;
+        cursor: pointer;
+        a {
+            text-decoration: none;
+            color: #000;
+            &:hover {
+                color: $color-pink;
+            }
+        }
+    }
+}

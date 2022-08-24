@@ -45,7 +45,7 @@ const Cart = () => {
 
     return (
         <>
-            <Link to={'/category'}><button className='countBtn back'>Volver</button></Link>
+            <Link to={'/'}><button className='countBtn back'>Volver</button></Link>
             {
                 test.cartList.length === 0
                     ? <h2>Carrito vacío</h2>

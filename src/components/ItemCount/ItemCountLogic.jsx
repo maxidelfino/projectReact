@@ -13,7 +13,7 @@ const ItemCountLogic = (props) => {
 
     const add = () => {
         if (counter < props.stock) {
-            const aux = counter + 1; //solo funciona con +1 y no con ++
+            const aux = counter + 1;
             setCounter(aux);
         }
     }

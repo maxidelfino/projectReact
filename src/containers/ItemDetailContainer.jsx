@@ -11,31 +11,11 @@ const ItemDetailContainer = () => {
 
   useEffect(() => {
     getDoc(doc(db, 'products', id))
-    .then(res => setProductList({
-      id: res.id,
-      ...res.data()
-    }))
-    // const myPromise = (timeOut, products) => {
-    //   return new Promise((resolve, reject) => {
-    //     setTimeout(() => {
-    //       resolve(products);
-    //     }, timeOut);
-    //   });
-    // }
-    
-    // if (id === undefined){
-    //     myPromise()
-    //     .then(() => myPromise(1000, products))
-    //     .then(() => setProductList(products))
-    // } else {
-    //     myPromise()
-    //     .then(() => myPromise(1000, products.filter(item => item.id === id)))
-    //     .then(() => setProductList(products.filter(item => item.id === id)))
-    //     console.log(products.filter(item => item.id === id))
-    // }
+      .then(res => setProductList({
+        id: res.id,
+        ...res.data()
+      }))
   }, [id])
-  // myPromise()
-  //   .then(() => setProductList(products[id-1]))
 
   return (
     <>

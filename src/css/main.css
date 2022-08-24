@@ -27,6 +27,9 @@
 .NavbarItems h1:hover {
   color: #fe30af;
 }
+.NavbarItems h1:hover span {
+  color: #fff;
+}
 .NavbarItems h1 span {
   color: #fe30af;
   font-weight: 100;
@@ -419,4 +422,55 @@
   .menu-icon {
     display: none;
   }
+}
+.footer {
+  height: 200px;
+  width: 100%;
+  background: rgba(230, 230, 230, 0.278);
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  justify-items: center;
+  align-items: center;
+  position: relative;
+  bottom: 0;
+}
+.footer .footer-col-1 {
+  cursor: pointer;
+}
+.footer .footer-col-1 a {
+  text-decoration: none;
+}
+.footer .footer-col-1 h1 {
+  color: #743992;
+  font-weight: 500;
+  transition: color ease 0.25s;
+}
+.footer .footer-col-1 h1:hover {
+  color: #fe30af;
+}
+.footer .footer-col-1 h1:hover span {
+  color: #743992;
+}
+.footer .footer-col-1 h1 span {
+  color: #fe30af;
+  font-weight: 100;
+  transition: color ease 0.25s;
+}
+.footer .footer-col-1 h1 span:hover {
+  color: #743992;
+}
+.footer .footer-col-2 {
+  text-align: center;
+  padding: 0 20px;
+}
+.footer .footer-col-3 {
+  transition: color ease 0.25s;
+  cursor: pointer;
+}
+.footer .footer-col-3 a {
+  text-decoration: none;
+  color: #000;
+}
+.footer .footer-col-3 a:hover {
+  color: #fe30af;
 }/*# sourceMappingURL=main.css.map */
