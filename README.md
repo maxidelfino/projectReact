@@ -40,7 +40,7 @@
 
 #### DEPLOY
 
-https://react-smartwatch.netlify.app/
+https://project-react-kohl.vercel.app/
 
 ---
 
