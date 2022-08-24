@@ -1,70 +1,51 @@
-# Getting Started with Create React App
+# RomDes 👕 e-commerce
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+#### An app created by Maxi Delfino that simulates an e-commerce of men's clothing... Project created for educational purposes for the REACT JS course of Coderhouse. By professor Alex Marin Mendez ⭐⭐⭐⭐⭐
 
-## Available Scripts
+---
 
-In the project directory, you can run:
+#### PREVIEW
 
-### `npm start`
+<img wid src="https://firebasestorage.googleapis.com/v0/b/ropdes-7eb40.appspot.com/o/Captura%20de%20pantalla%202022-08-24%20195138.png?alt=media&token=e0f5bd6b-d934-4dfc-b79b-63bcb65100d7" alt="preview" width="auto"></img>
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+---
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+#### HOME
 
-### `npm test`
+#### The page groups products according to the following categories:
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+##### ▸ T-shirts
 
-### `npm run build`
+##### ▸ Jackets
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+##### ▸ Divers
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+---
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+#### CART 🛒
 
-### `npm run eject`
+#### The cart has an icon where the selected products are grouped for "buy". Right there, you can see the details of these products such as images, names, prices, quantity and subtotal. Allows you to remove each product or empty the cart, as well as remove or add a unit. It also includes a purchase detail where you can see the total quantity of selected products and the total price to "pay".
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
+---
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+#### LIBRARY
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
+#### ▸ FIREBASE > ^9.9.1: Firebase is Google's cloud database service and I use it to save products and purchase orders.
 
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
+#### ▸ MATERIAL UI > ^5.8.6: It's a library of icons. Used in Navbar.
 
-## Learn More
+#### ▸ REACT-ROUTER-DOM > ^6.3.0: Library that facilitates navigation, used to generate a correct flow of navigation.
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+---
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+#### DEPLOY
 
-### Code Splitting
+https://react-smartwatch.netlify.app/
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
+---
 
-### Analyzing the Bundle Size
+#### CONTACT
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
+##### ▸[GITHUB](https://github.com/maxidelfino)
 
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+##### ▸[LINKEDIN](https://www.linkedin.com/in/maximiliano-delfino/)
